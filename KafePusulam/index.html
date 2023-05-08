@@ -20,8 +20,8 @@
                 <ul class="nav-items">
                     <li><a href="#" class="active">Anasayfa</a></li>
                     <li><a href="#">Zirvedekiler</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Hakkımızda</a></li>
+                    <li><a href="#bloglar">Blog</a></li>
+                    <li><a href="#hakkımızda">Hakkımızda</a></li>
                 </ul>
             </nav>
             </div>
@@ -75,7 +75,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="hakkımızda">
         <div class="banner-container">
             <div class="left">
                 <img src="images/_Social_media_strategy_jpg_nLvbqTk4-removebg-preview 1.svg" alt="İlüstrasyon">
@@ -88,7 +88,7 @@
         </div>
       </section>
 
-      <section>
+      <section id="bloglar">
         <div class="bloglar1-container">
         <div class="left">
             <img class="resim" src="images/Image.svg" alt="Resim">
@@ -166,9 +166,9 @@
             <div class="sayfalar">
                 <h5>Sayfalar</h5>
                 <ul><li><a href="#">Anasayfa</a></li>
-                <li><a href="#">Hakkımızda</a></li>
+                <li><a href="#hakkımızda">Hakkımızda</a></li>
                 <li><a href="#">İletişim</a></li>
-                <li><a href="#">Blog</a></li></ul>
+                <li><a href="#bloglar">Blog</a></li></ul>
             </div>
             <div class="sirket">
                 <h5>Şirket</h5>
@@ -191,6 +191,19 @@
 
         </div>
     </footer>
-
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+    $(document).ready(function(){
+      $('a[href^="#"]').on('click', function(event) {
+        var target = $(this.getAttribute('href'));
+        if( target.length ) {
+          event.preventDefault();
+          $('html, body').stop().animate({
+            scrollTop: target.offset().top
+          }, 1000);
+        }
+      });
+    });
+    </script>
 </body>
 </html>
