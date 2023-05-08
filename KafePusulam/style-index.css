@@ -119,6 +119,7 @@ body{
 }
 .hero-container .left{
     margin-right:110px;
+    animation: fadeInToRight 800ms cubic-bezier(0.22, 0.32, 0, 1.54) 400ms ;
 
 }
 .hero-container .left h1 {
@@ -613,6 +614,18 @@ height: 72px;
     line-height: 24px;
     color: var(--black-900);
     margin-left: 30px;
+}
+
+@keyframes fadeInToRight {
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }
 
 
