@@ -4,25 +4,25 @@ include 'baglanti.php';
 if(isset($_POST["submit"])){
     $datas=$_POST['data'];
     $allData=implode(",",$datas);
-    echo $allData;
+    //echo $allData;
 
     $sql="insert into multipledata1(checkboxData) values('$allData')";
     $result =mysqli_query($baglanti,$sql);
-    if($result){
+    /*if($result){
       
             echo "Kaydedildi.";
        
     }
     else{
         die(mysqli_error($baglanti)); // Hata mesajını ekrana yazdırır
-    }
+    }*/
 
     mysqli_close($baglanti);
 }
 ?>
 
 
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -66,12 +66,12 @@ if(isset($_POST["submit"])){
                 </label>
             </div>
             <div class="filtreler">
-                <label for="filtre"><input type="checkbox" name="data[]" value="value 6"  id="filtre">
+                <label for="filtre"><input type="checkbox" name="data[]" value="Alkolsüz"  id="filtre">
                     <span> • Alkolsüz</span>
                 </label>
             </div>
             <div class="filtreler">
-                <label for="filtre"><input type="checkbox" name="data[]" value="Alkolsüz" id="filtre">
+                <label for="filtre"><input type="checkbox" name="data[]" value="Vegan" id="filtre">
                     <span> • Vegan</span>
                 </label>
             </div>

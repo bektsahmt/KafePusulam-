@@ -8,7 +8,8 @@ $vt="crudseries"; //veri tabanı ismi
 $baglanti = mysqli_connect($host, $kullanici, $parola, $vt);
 mysqli_set_charset($baglanti, "UTF8"); //türkçe karakterleri engellemek adına UTF8
 
-if($baglanti){
-    echo "Bağlantı başarılı";
-}
+//if($baglanti){
+//    echo "Bağlantı başarılı";
+//}
+
 ?>
