@@ -1,28 +1,81 @@
 <?php
 include("baglanti.php"); //baglanti sayfası kayıt-ol sayfasına bağlandı
- if(isset($_POST["kayıtbuton"]))
- {
-    $name = $_POST["ad-soyad"];
-    $email = $_POST["mail"];
-    $password = $_POST["password"];
+$ussername_err="";
+$email_err="";
+$parola_err="";
 
-    $ekle="INSERT INTO kullanicilar (kullanici_adi, email, parola) VALUES ('$name','$email','$password')";
+ if(isset($_POST["kayıtbuton"])) //kayıt butonuna basıldığında çalışır
+ {
+    //kullanıcı adı doğrulama
+    if(empty($_POST["ad-soyad"]))
+    {
+        $ussername_err="Kullanıcı adı alanı boş bırakılamaz!";
+    }
+    else if(strlen(($_POST["ad-soyad"])<6))
+    {
+        $ussername_err="Kullanıcı adı 6 karakterden az olamaz!";
+    }
+    else if (!preg_match('/^[a-z\d_]{5,20}$/i', $_POST["ad-soyad"])) 
+    {
+        $ussername_err="Kullanıcı adı özel karakter içeremez!";
+    }
+    else
+    {
+        $username = $_POST["ad-soyad"];
+    }
+
+
+    //email doğrulama
+    if(empty($_POST["mail"]))
+    {
+        $email_err="Email alanı boş bırakılamaz!";
+    }
+    else if (!filter_var($_POST["mail"], FILTER_VALIDATE_EMAIL)) //bu sorgulamayı önce html5 yapıyor
+    {
+        $email_err = "Geçersiz email formatı!";
+    }
+    else
+    {
+        $email=$_POST["mail"];
+    }   
+
+
+    //parola doğrulama
+    if(empty($_POST["password"]))
+    {
+        $parola_err="Şifre alanı boş geçilemez!";
+    }
+    else if(strlen($_POST["password"]) < 8)
+    {
+    $parola_err = "Parola 8 karakterden az olamaz!";
+    }
+    else
+    {
+        $parola=password_hash($_POST["password"],PASSWORD_DEFAULT);
+    }
+
+    //tüm bilgiler uygunsa..
+    if(isset($username) && isset($email) && isset($parola))
+    {
+    $ekle="INSERT INTO seriescrud (kullanici_adi, email, parola) VALUES ('$username','$email','$parola')";
+
     $calistirekle = mysqli_query($baglanti, $ekle);
+
     if($calistirekle)
     {
-        echo'<div class="alert alert-success" role="alert">
+        echo'<div class="alert alert-success" style="color:green" role="alert">
         Kayıt başarılı şekilde eklendi
       </div>';
     }
     else{
-        echo'<div class="alert alert-danger" role="alert">
+        echo'<div class="alert alert-danger" style="color:red" role="alert">
         Kayıt eklenirken bir problem oluştu
       </div>';
     }
 
     mysqli_close($baglanti);
-
  }
+}
 
 ?>
 <!DOCTYPE html>
@@ -42,25 +95,36 @@ include("baglanti.php"); //baglanti sayfası kayıt-ol sayfasına bağlandı
                 <form action = "kayit-ol.php" method="POST">
                     <div class="kayıt-grup">
                          <div class="kayıt-kısmı">
-                            <label for="ad-soyad">Ad, Soyad</label>
+                            <label for="ad-soyad">Kullanıcı Adı</label>
                             <br>
                             <input type="text" name="ad-soyad" placeholder="A*** B***">
+                            <div id="validationServer03Feedback" style="color:red" class="invalid-feedback">
+      <?php echo $ussername_err; ?>
+    </div>
                          </div>
+                         <br>
 
                          <div class="kayıt-kısmı">
-                            <label for="mail">Email*</label>
+                            <label for="mail">Email</label>
                             <br>
                             <input type="email" name="mail" placeholder="kafepusulam@gmail.com">
+                            <div id="validationServer03Feedback" style="color:red" class="invalid-feedback">
+       <?php echo $email_err; ?>
+    </div>
                          </div>
+                         <br>
 
                          <div class="kayıt-kısmı">
-                            <label for="password">Şifre Oluştur*</label>
+                            <label for="password">Şifre Oluştur</label>
                             <br>
                             <input type="password" name="password" placeholder="Şifre Belirleyin">
-                            <p>Şifre en az 8 karakterden oluşmalıdır.</p>
+                            <div id="validationServer03Feedback" style="color:red" class="invalid-feedback">
+        <?php echo $parola_err; ?>
+    </div>
                          </div>
                          
                     </div>
+
                     <div class="btn-field">
                         <button type ="submit" name= "kayıtbuton" class="btn" type="button">Kaydet</button>
                     </div>
