@@ -66,6 +66,9 @@ $parola_err="";
         echo'<div class="alert alert-success" style="color:green" role="alert">
         Kayıt başarılı şekilde eklendi
       </div>';
+      header("Location: checkbox.php");
+      exit();
+      
     }
     else{
         echo'<div class="alert alert-danger" style="color:red" role="alert">
@@ -95,9 +98,10 @@ $parola_err="";
                 <form action = "kayit-ol.php" method="POST">
                     <div class="kayıt-grup">
                          <div class="kayıt-kısmı">
+                            
                             <label for="ad-soyad">Kullanıcı Adı</label>
                             <br>
-                            <input type="text" name="ad-soyad" placeholder="A*** B***">
+                            <input type="text" name="ad-soyad" placeholder="kullaniciadi">
                             <div id="validationServer03Feedback" style="color:red" class="invalid-feedback">
       <?php echo $ussername_err; ?>
     </div>

@@ -162,3 +162,14 @@ input[name="password"]::placeholder {
     width: 372px;
     height: 24px;
 }
+
+input[name="ad-soyad"]::placeholder {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px ;
+    line-height: 24px;
+    color:#585C5F; 
+    width: 372px;
+    height: 24px;
+}
