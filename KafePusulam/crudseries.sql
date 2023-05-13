@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Anamakine: 127.0.0.1
--- Üretim Zamanı: 10 May 2023, 13:43:50
+-- Üretim Zamanı: 11 May 2023, 20:28:25
 -- Sunucu sürümü: 10.4.28-MariaDB
 -- PHP Sürümü: 8.2.4
 
@@ -32,15 +32,6 @@ CREATE TABLE `multipledata1` (
   `checkboxData` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Tablo döküm verisi `multipledata1`
---
-
-INSERT INTO `multipledata1` (`id`, `checkboxData`) VALUES
-(1, 'LGBT+,Alkollü'),
-(2, 'LGBT+,Alkollü'),
-(3, 'LGBT+,Alkollü,Canlı Müzik,Hayvan Dostu,value 6');
-
 -- --------------------------------------------------------
 
 --
@@ -49,18 +40,19 @@ INSERT INTO `multipledata1` (`id`, `checkboxData`) VALUES
 
 CREATE TABLE `seriescrud` (
   `id` int(11) NOT NULL,
-  `isim` varchar(50) NOT NULL,
+  `kullanici_adi` varchar(50) NOT NULL,
   `email` varchar(50) NOT NULL,
-  `sifre` varchar(15) NOT NULL
+  `parola` varchar(25) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
 -- Tablo döküm verisi `seriescrud`
 --
 
-INSERT INTO `seriescrud` (`id`, `isim`, `email`, `sifre`) VALUES
-(1, 'tu', 'tugbatyglu@gmail.com', '12345678'),
-(2, 'gfe', 'dfsfdfs@gmail.com', '132456');
+INSERT INTO `seriescrud` (`id`, `kullanici_adi`, `email`, `parola`) VALUES
+(79, 'tugce', 'mukultugce@gmail.com', '$2y$10$n86PS7lzpeVOdNTsgM'),
+(80, 'tugcemm', 'mukultugce@gmail.com', '$2y$10$zsLz7Dz3.SpW29bNlj'),
+(81, 'semih123', 'semih@gmail.com', '$2y$10$8Pz7v1kbLm5WHhdj2e');
 
 --
 -- Dökümü yapılmış tablolar için indeksler
@@ -86,13 +78,13 @@ ALTER TABLE `seriescrud`
 -- Tablo için AUTO_INCREMENT değeri `multipledata1`
 --
 ALTER TABLE `multipledata1`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- Tablo için AUTO_INCREMENT değeri `seriescrud`
 --
 ALTER TABLE `seriescrud`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=82;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
