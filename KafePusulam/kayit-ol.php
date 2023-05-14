@@ -51,7 +51,7 @@ $parola_err="";
     }
     else
     {
-        $parola=password_hash($_POST["password"],PASSWORD_DEFAULT);
+        $parola=$_POST["password"];
     }
 
     //tüm bilgiler uygunsa..
