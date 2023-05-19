@@ -49,7 +49,7 @@ $parola_err="";
                 session_start(); //oturum başlatıldı
                 $_SESSION["kullanici_adi"] = $ilgilikayit["kullanici_adi"];
                 $_SESSION["email"] = $ilgilikayit["email"];
-                header("Location: checkbox.php");
+                header("Location: hosgeldin.php");
             exit();
                 
             }
