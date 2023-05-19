@@ -41,62 +41,62 @@ if(isset($_POST["submit"])){
             <div class="filtreler-container">
 
             <div class="filtreler">
-                <label for="filtre"><input type="checkbox" name="data[]" value="LGBT+" id="filtre">
+                <label for="filtre"><input type="checkbox" name="data[]" value="0" id="filtre">
                     <span> • LGBT+</span>
                 </label>
             </div>
             <div class="filtreler">
-                <label for="filtre"><input type="checkbox" name="data[]" value="Alkollü"  id="filtre">
+                <label for="filtre"><input type="checkbox" name="data[]" value="1"  id="filtre">
                     <span> • Alkollü</span>
                 </label>
             </div>
             <div class="filtreler">
-                <label for="filtre"><input type="checkbox" name="data[]" value="Canlı Müzik" id="filtre">
+                <label for="filtre"><input type="checkbox" name="data[]" value="2" id="filtre">
                     <span> • Canlı Müzik</span>
                 </label>
             </div>
             <div class="filtreler">
-                <label for="filtre"><input type="checkbox" name="data[]"value="Vejetaryen"  id="filtre">
+                <label for="filtre"><input type="checkbox" name="data[]"value="3"  id="filtre">
                     <span> • Vejetaryen</span>
                 </label>
             </div>
             <div class="filtreler">
-                <label for="filtre"><input type="checkbox" name="data[]"value="Hayvan Dostu"  id="filtre">
+                <label for="filtre"><input type="checkbox" name="data[]"value="4"  id="filtre">
                     <span> • Hayvan Dostu</span>
                 </label>
             </div>
             <div class="filtreler">
-                <label for="filtre"><input type="checkbox" name="data[]" value="Alkolsüz"  id="filtre">
+                <label for="filtre"><input type="checkbox" name="data[]" value="5"  id="filtre">
                     <span> • Alkolsüz</span>
                 </label>
             </div>
             <div class="filtreler">
-                <label for="filtre"><input type="checkbox" name="data[]" value="Vegan" id="filtre">
+                <label for="filtre"><input type="checkbox" name="data[]" value="6" id="filtre">
                     <span> • Vegan</span>
                 </label>
             </div>
             <div class="filtreler">
-                <label for="filtre"><input type="checkbox" name="data[]"value="Yöresel Zevkler"  id="filtre">
+                <label for="filtre"><input type="checkbox" name="data[]"value="7"  id="filtre">
                     <span> • Yöresel Zevkler</span>
                 </label>
             </div>
             <div class="filtreler">
-                <label for="filtre"><input type="checkbox" name="data[]" value="Dünya Mutfağı" id="filtre">
+                <label for="filtre"><input type="checkbox" name="data[]" value="8" id="filtre">
                     <span> • Dünya Mutfağı</span>
                 </label>
             </div>
             <div class="filtreler">
-                <label for="filtre"><input type="checkbox" name="data[]"value="Yeni Nesil Kahveciler"  id="filtre">
+                <label for="filtre"><input type="checkbox" name="data[]"value="9"  id="filtre">
                     <span> • Yeni Nesil Kahveciler</span>
                 </label>
             </div>
             <div class="filtreler">
-                <label for="filtre"><input type="checkbox" name="data[]" value="Yeşilay" id="filtre">
+                <label for="filtre"><input type="checkbox" name="data[]" value="10" id="filtre">
                     <span> • Yeşilay</span>
                 </label>
             </div>
             <div class="filtreler">
-                <label for="filtre"><input type="checkbox" name="data[]" value="Bütçe Dostu"  id="filtre">
+                <label for="filtre"><input type="checkbox" name="data[]" value="11"  id="filtre">
                     <span> • Bütçe Dostu</span>
                 </label>
             </div>

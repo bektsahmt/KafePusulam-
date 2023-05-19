@@ -40,6 +40,22 @@ li{
 
 .oneri3{
     display: flex;
+    margin-bottom: 20px;
+}
+
+.oneri4{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.oneri5{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.oneri6{
+    display: flex;
+    margin-bottom: 20px;
 }
 .right{
     margin-left: 40px;
@@ -89,6 +105,7 @@ li{
    mix-blend-mode: multiply;
    border-radius: 16px;
 }
+
 
 h1{
     font-family: 'Playfair Display';
