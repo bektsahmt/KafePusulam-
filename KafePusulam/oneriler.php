@@ -63,7 +63,7 @@ for ($i = 0; $i <= 12; $i++) {
             <div class="up-left">
                <h2>The Roasted Palette</h2>
             </div>
-
+                           
             <div class="up-right">
                 <li> • LGBT+</li>
                 <li> • Hayvan Dostu</li>
