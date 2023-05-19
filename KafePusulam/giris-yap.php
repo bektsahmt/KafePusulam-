@@ -49,8 +49,9 @@ $parola_err="";
                 session_start(); //oturum başlatıldı
                 $_SESSION["kullanici_adi"] = $ilgilikayit["kullanici_adi"];
                 $_SESSION["email"] = $ilgilikayit["email"];
-                header("location:hosgeldin.php");
-                exit();
+                header("Location: checkbox.php");
+            exit();
+                
             }
             else //girilen parola ve veri tabanındaki parola uyuşmuyorsa
             {

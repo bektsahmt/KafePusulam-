@@ -66,8 +66,8 @@ $parola_err="";
         echo'<div class="alert alert-success" style="color:green" role="alert">
         Kayıt başarılı şekilde eklendi
       </div>';
-      header("Location: checkbox.php");
-      exit();
+      header("location:hosgeldin.php");
+     exit();
       
     }
     else{

@@ -1,5 +1,4 @@
 <?php
-
 include 'baglanti.php';
 if(isset($_POST["submit"])){
     $datas=$_POST['data'];
@@ -18,6 +17,13 @@ if(isset($_POST["submit"])){
     }*/
 
     mysqli_close($baglanti);
+}
+
+if(isset($_POST["submit"]))
+{
+    header("Location: oneriler.php");
+            exit();
+
 }
 ?>
 
