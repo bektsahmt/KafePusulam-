@@ -3,6 +3,7 @@ include("baglanti.php"); //baglanti sayfası kayıt-ol sayfasına bağlandı
 $ussername_err="";
 $email_err="";
 $parola_err="";
+$kayit_eklendi="";
 
  if(isset($_POST["kayıtbuton"])) //kayıt butonuna basıldığında çalışır
  {
@@ -66,8 +67,7 @@ $parola_err="";
         echo'<div class="alert alert-success" style="color:green" role="alert">
         Kayıt başarılı şekilde eklendi
       </div>';
-      header("location:hosgeldin.php");
-     exit();
+      $kayit_eklendi=1;
       
     }
     else{
@@ -78,6 +78,14 @@ $parola_err="";
 
     mysqli_close($baglanti);
  }
+
+}
+
+if($kayit_eklendi==1)
+{
+    header("Location: hosgeldin.php"); // Yönlendirme
+
+            exit(); // İşlemi sonlandırın
 }
 
 ?>

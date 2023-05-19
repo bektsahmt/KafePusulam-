@@ -24,6 +24,7 @@ if(isset($_POST["devam-et-buton"]))
                 <div class="left">
                     <h4>Aramıza Hoş Geldin</h4>
                     <h1>Ailemiz Seninle Büyüdü</h1>
+
                     <p> <?php echo $_SESSION["kullanici_adi"] ?> </p>
 
                     <div class="btn-field">
