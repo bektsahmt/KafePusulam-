@@ -29,7 +29,7 @@ if ($checkboxDataResult->num_rows > 0) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Senin İçin Seçtiklerimiz</title>
-    <link rel="stylesheet" href="oneriler.css">
+    <link rel="stylesheet" href="styles/oneriler.css">
 </head>
 <body>
     <div class="wrapper">
@@ -55,7 +55,7 @@ for ($i = 0; $i <= 12; $i++) {
         echo '
         <div class="oneri1">
         <div class="left">
-            <img src="images/kafe1.jpg" alt="RadioCafe">
+            <img src="images/kafefoto.svg" alt="RadioCafe">
         </div>
         <div class="right">
             <div class="up">
@@ -88,7 +88,7 @@ for ($i = 0; $i <= 12; $i++) {
         echo '
         <div class="oneri2">
         <div class="left">
-            <img src="images/kafe1.jpg" alt="RadioCafe">
+            <img src="images/kafe2.svg" alt="RadioCafe">
         </div>
         <div class="right">
             <div class="up">
@@ -122,7 +122,7 @@ for ($i = 0; $i <= 12; $i++) {
         echo '
         <div class="oneri3">
         <div class="left">
-            <img src="images/kafefoto.svg" alt="RadioCafe">
+            <img src="images/kafe3.svg" alt="RadioCafe">
         </div>
         <div class="right">
             <div class="up">
@@ -155,7 +155,7 @@ for ($i = 0; $i <= 12; $i++) {
         echo '
         <div class="oneri4">
         <div class="left">
-            <img src="images/kafefoto.svg" alt="RadioCafe">
+            <img src="images/kafe4.svg" alt="RadioCafe">
         </div>
         <div class="right">
             <div class="up">
@@ -188,7 +188,7 @@ for ($i = 0; $i <= 12; $i++) {
         echo '
         <div class="oneri5">
         <div class="left">
-            <img src="images/kafefoto.svg" alt="RadioCafe">
+            <img src="images/kafe5.svg" alt="RadioCafe">
         </div>
         <div class="right">
             <div class="up">
@@ -221,7 +221,7 @@ for ($i = 0; $i <= 12; $i++) {
         echo '
         <div class="oneri6">
         <div class="left">
-            <img src="images/kafefoto.svg" alt="RadioCafe">
+            <img src="images/kafe6.svg" alt="RadioCafe">
         </div>
         <div class="right">
             <div class="up">

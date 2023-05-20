@@ -15,15 +15,15 @@ if(isset($_POST["devam-et-buton"]))
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aramıza Hoşgeldin</title>
-    <link rel="stylesheet" href="hosgeldin.css">
+    <link rel="stylesheet" href="styles/hosgeldin.css">
 </head>
 <body>
     <form method="post" action="">
         <div class="wrapper">
             <div class="container">
                 <div class="left">
-                    <h4>Aramıza Hoş Geldin</h4>
-                    <h1>Ailemiz Seninle Büyüdü</h1>
+                    <h4>Hoş Geldin Kaşif!</h4>
+                    <h1>Seni Gördüğümüze Sevindik</h1>
 
                     <p> <?php echo $_SESSION["kullanici_adi"] ?> </p>
 
