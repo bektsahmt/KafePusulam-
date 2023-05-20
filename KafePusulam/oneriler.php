@@ -98,7 +98,7 @@ for ($i = 0; $i <= 12; $i++) {
             </div>
 
             <div class="up-right">
-                <li> • Akol Sever</li>
+                <li> • Alkol Sever</li>
                 <li> • Canlı Müzik</li>
                 <li> • Yeni Nesil Kahveciler</li>
                 
