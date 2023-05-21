@@ -55,7 +55,7 @@ for ($i = 0; $i <= 12; $i++) {
         echo '
         <div class="oneri1">
         <div class="left">
-            <img src="images/kafefoto.svg" alt="RadioCafe">
+            <img src="images/kafefoto.svg" alt="The Roasted Palette">
         </div>
         <div class="right">
             <div class="up">
@@ -108,7 +108,7 @@ for ($i = 0; $i <= 12; $i++) {
 
             <p class="Tanitimyazisi">Le Petit Café, alkollü içeceklerin keyfini çıkarmak isteyenler, canlı müzikle ruhunu şenlendirmek isteyenler ve yeni nesil kahveci deneyimi arayanlar için ideal bir mekan. Bu eşsiz kafe, zengin içecek seçenekleriyle ve ferah atmosferiyle misafirlerini karşılıyor. Lezzetli kokteyller, seçkin bira ve şaraplarla içkinizi yudumlarken, canlı müzik performansları size unutulmaz anlar yaşatacak. Le Petit Café, modern bir kahveci konseptiyle birleşen eğlenceli ve samimi bir ortam sunarak sizi sıradışı bir deneyime davet ediyor.</p>
 
-            <p class="konum"><img src="images/konum_ikon.svg" alt="konumikonu"> Taksim/İstanbul</p>
+            <p class="konum"><img src="images/konum_ikon.svg" alt="konumikonu"> Bakırköy/İstanbul</p>
 
             <a href="#" class="btn btn-kafeyegit">Kafeye Git</a>
 
@@ -122,7 +122,7 @@ for ($i = 0; $i <= 12; $i++) {
         echo '
         <div class="oneri3">
         <div class="left">
-            <img src="images/kafe3.svg" alt="RadioCafe">
+            <img src="images/kafe3.svg" alt="Gaia Bistro">
         </div>
         <div class="right">
             <div class="up">
@@ -141,7 +141,7 @@ for ($i = 0; $i <= 12; $i++) {
 
             <p class="Tanitimyazisi">Gaia Bistro, vejetaryen ve vegan damak zevklerine hitap eden bir kafe olmanın yanı sıra, yöresel lezzetlerin izini süren bir mekan olarak öne çıkıyor. Bu benzersiz bistro, sağlıklı ve lezzetli seçenekleriyle herkesi cezbediyor. Gaia Bistroda, taze ve organik malzemelerle hazırlanan yaratıcı ve besleyici yemekler bulunurken, yöresel tatlar da özenle sunuluyor. Doğal ve sürdürülebilir bir anlayışla hizmet veren Gaia Bistro, hem bedeninize hem de doğaya saygı duyan bir kafe deneyimi sunuyor.</p>
 
-            <p class="konum"><img src="images/konum_ikon.svg" alt="konumikonu"> Taksim/İstanbul</p>
+            <p class="konum"><img src="images/konum_ikon.svg" alt="konumikonu"> Bahçelievler/İstanbul</p>
 
             <a href="#" class="btn btn-kafeyegit">Kafeye Git</a>
 
@@ -155,7 +155,7 @@ for ($i = 0; $i <= 12; $i++) {
         echo '
         <div class="oneri4">
         <div class="left">
-            <img src="images/kafe4.svg" alt="RadioCafe">
+            <img src="images/kafe4.svg" alt="Royal Brew">
         </div>
         <div class="right">
             <div class="up">
@@ -174,7 +174,7 @@ for ($i = 0; $i <= 12; $i++) {
 
             <p class="Tanitimyazisi">Royal Brew, hayvan dostu bir atmosferde, yeni nesil kahve deneyimi sunan ve Yeşilay ilkelerine sadık kalan bir kafe olarak öne çıkıyor. Bu özel mekan, lezzetli kahveleri ve samimi ortamıyla hem kahve tutkunlarını hem de hayvan severleri cezbediyor. Royal Brewda, özenle seçilen kahve çekirdekleriyle hazırlanan yenilikçi kahve çeşitleri sizi beklerken, aynı zamanda hayvan haklarına duyarlılığı teşvik eden etkinlikler de düzenleniyor. Burada, sıcak bir atmosferde keyifli vakit geçirirken, sevdiğiniz kahvelerin tadını çıkarabilir ve Yeşilay değerlerine destek verme fırsatı bulabilirsiniz.</p>
 
-            <p class="konum"><img src="images/konum_ikon.svg" alt="konumikonu"> Taksim/İstanbul</p>
+            <p class="konum"><img src="images/konum_ikon.svg" alt="konumikonu"> Fatih/İstanbul</p>
 
             <a href="#" class="btn btn-kafeyegit">Kafeye Git</a>
 
@@ -188,7 +188,7 @@ for ($i = 0; $i <= 12; $i++) {
         echo '
         <div class="oneri5">
         <div class="left">
-            <img src="images/kafe5.svg" alt="RadioCafe">
+            <img src="images/kafe5.svg" alt="Harmonious Java">
         </div>
         <div class="right">
             <div class="up">
@@ -207,7 +207,7 @@ for ($i = 0; $i <= 12; $i++) {
 
             <p class="Tanitimyazisi">Harmonious Java, LGBT+ topluluğuna destek veren, alkollü içeceklerin keyfini çıkarmak isteyenlere hitap eden ve canlı müzikle atmosferini canlandıran bir kafe olarak öne çıkıyor. Bu özel mekan, renkli ve kapsayıcı bir ortamda herkesi ağırlıyor. Harmonious Javada, enfes kahve çeşitleriyle birlikte çeşitli alkollü içecek seçenekleri sunulurken, canlı müzik performansları sizi büyüleyecek. Burada, kendinizi özgürce ifade edebileceğiniz bir atmosferde, keyifli anlar yaşayabilir ve müziğin ritmiyle ruhunuzu şenlendirebilirsiniz.</p>
 
-            <p class="konum"><img src="images/konum_ikon.svg" alt="konumikonu"> Taksim/İstanbul</p>
+            <p class="konum"><img src="images/konum_ikon.svg" alt="konumikonu"> Üsküdar/İstanbul</p>
 
             <a href="#" class="btn btn-kafeyegit">Kafeye Git</a>
 
@@ -221,7 +221,7 @@ for ($i = 0; $i <= 12; $i++) {
         echo '
         <div class="oneri6">
         <div class="left">
-            <img src="images/kafe6.svg" alt="RadioCafe">
+            <img src="images/kafe6.svg" alt="Aurora Delights">
         </div>
         <div class="right">
             <div class="up">
@@ -240,7 +240,7 @@ for ($i = 0; $i <= 12; $i++) {
 
             <p class="Tanitimyazisi">Aurora Delights, alkolsüz bir ortamda Dünya Mutfağının lezzetlerini sunan ve bütçe dostu bir kafe olarak karşımıza çıkıyor. Bu benzersiz mekan, farklı kültürlerin enfes tatlarını bir araya getirirken, sağlıklı ve besleyici seçenekleriyle de dikkat çekiyor. Aurora Delightsta, çeşitli lezzetler arasından seçim yaparken cüzdanınızı da düşünebilirsiniz. Sıcak ve davetkar atmosferiyle Aurora Delights, uygun fiyatlarla keyifli bir yemek deneyimi sunuyor.</p>
 
-            <p class="konum"><img src="images/konum_ikon.svg" alt="konumikonu"> Taksim/İstanbul</p>
+            <p class="konum"><img src="images/konum_ikon.svg" alt="konumikonu"> Kadıköy/İstanbul</p>
 
             <a href="#" class="btn btn-kafeyegit">Kafeye Git</a>
 
