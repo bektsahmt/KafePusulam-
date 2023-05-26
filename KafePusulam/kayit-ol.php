@@ -83,7 +83,7 @@ $kayit_eklendi="";
 
 if($kayit_eklendi==1)
 {
-    header("Location: hosgeldin.php"); // Yönlendirme
+    header("Location: giris-yap.php"); // Yönlendirme
 
             exit(); // İşlemi sonlandırın
 }
