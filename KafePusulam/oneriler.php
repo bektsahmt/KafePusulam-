@@ -183,7 +183,7 @@ for ($i = 0; $i <= 12; $i++) {
     $secilenKafeVar3 = true;
         }
 
-    }elseif(in_array($i, $sayiDizisi) && ($i == 0 || $i == 1 || $i == 2 )){
+    }elseif(in_array($i, $sayiDizisi) && ($i == 6 || $i == 11 || $i == 2 )){
         if (!$secilenKafeVar4) {
         echo '
         <div class="oneri5">
@@ -198,8 +198,8 @@ for ($i = 0; $i <= 12; $i++) {
             </div>
 
             <div class="up-right">
-                <li> • LGBT+</li>
-                <li> • Alkol Sever</li>
+                <li> • Vegan</li>
+                <li> • Bütçe Dostu</li>
                 <li> • Canlı Müzik</li>
             </div>
 
