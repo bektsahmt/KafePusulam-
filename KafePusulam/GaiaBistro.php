@@ -152,6 +152,34 @@ $result = $baglanti->query($selectSql);
                    
                 </div>
 
+                <div class="btn-field4">
+                  <button class="sipver" id="myBtn3">Sipariş Ver</button>
+               </div>
+
+               <div id="myModal3" class="modal3">
+                <div class="modal-content2">
+                  <span class="close3">&times;</span>
+                  <h2>Gaia Bistro</h2>
+
+                  <form action="">
+                    <div class="mesaj2">
+                        <label for="mesaj2"></label>
+                        <input type="text" name="mesaj2" placeholder="Siparişinizi Veriniz">
+                    </div>
+    
+                    <div class="btn-field5">
+                        <button class="btn2" type="button">Siparişi Ver</button>
+                    </div>
+                </form>
+
+
+
+ 
+                </div>
+              </div>
+
+
+
                 <div class="yorumlar">
     <?php while ($row = $result->fetch_assoc()) { ?>
         <div class="yorum">
@@ -222,6 +250,23 @@ $result = $baglanti->query($selectSql);
             modal2.style.display = "none";
           }
         }
+
+        var modal3= document.getElementById("myModal3");
+         var btn3 = document.getElementById("myBtn3");
+         var span3 = document.getElementsByClassName("close3")[0]; 
+        btn3.onclick = function() {
+          modal3.style.display = "block";
+        }
+        span3.onclick = function() {
+          modal3.style.display = "none";
+        }
+        window.onclick = function(event) {
+          if (event.target == modal2) {
+            modal3.style.display = "none";
+          }
+        }
+
+        
     </script>
 </body>
 </html>
