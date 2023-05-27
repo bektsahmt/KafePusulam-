@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İletişime Geç</title>
+    <link rel="stylesheet" href="styles/iletisim.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h1>İletişime Geç</h1>
+            <h2>Senin için buradayız.</h2>
+
+            <form action="mail.php" method="POST" name="mail_form">
+                <div class="adsoyad">
+                   <div class="ad">
+                    <label for="ad">İsminiz</label>
+                    <br>
+                    <input type="text" name="ad" placeholder="A****">
+                   </div>
+
+                   <div class="soyad">
+                    <label for="soyad">Soyadınız</label>
+                    <br>
+                    <input type="text" name="soyad" placeholder="B****">
+                   </div>
+                </div>
+
+                <div class="mail">
+                    <label for="email">Email</label>
+                    <br>
+                    <input type="email" name="mail" placeholder="kafepusulam@gmail.com">
+                </div>
+
+                <div class="mesaj">
+                    <label for="mesaj">Mesajınız</label>
+                    <br>
+                    <input type="text" name="mesaj" placeholder="Sorunlarınız için buradayız">
+                </div>
+
+                <div class="btn-field">
+                    <button class="btn" name="gonder" type="submit">Gönder</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>
