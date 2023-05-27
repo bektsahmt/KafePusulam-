@@ -34,14 +34,14 @@ if(isset($_POST["submit"]))
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seni Daha İyi Tanımak İstiyoruz</title>
+    <title>Şimdi Nereyi Keşfedelim?</title>
     <link rel="stylesheet" href="styles/style-filtreleme.css">
 </head>
 <body>
     <div class="container">
         <div class="yazilar">
-            <h1>Seni tanımak isteriz</h1>
-            <p>Aşağıda bir kaç etikete yer verdik, aralarından senin için en uygun olanları seçerek üyeliğini tamamlayabilirsin.</p>
+            <h1>Şimdi Nereyi Keşfedelim?</h1>
+            <p>Aşağıda bir kaç etikete yer verdik, aralarından senin için en uygun olanları seçerek kafeleri görüntüleyebilirsin.</p>
         </div>
         <form method="POST" >
             <div class="filtreler-container">
