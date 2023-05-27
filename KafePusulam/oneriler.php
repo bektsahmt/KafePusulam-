@@ -77,7 +77,7 @@ for ($i = 0; $i <= 12; $i++) {
 
             <p class="konum"><img src="images/konum_ikon.svg" alt="konumikonu"> Taksim/İstanbul</p>
 
-            <a href="#" class="btn btn-kafeyegit">Kafeye Git</a>
+            <a href="TheRoastedPalette.php" class="btn btn-kafeyegit">Kafeye Git</a>
 
         </div>
     </div>';
@@ -110,7 +110,7 @@ for ($i = 0; $i <= 12; $i++) {
 
             <p class="konum"><img src="images/konum_ikon.svg" alt="konumikonu"> Bakırköy/İstanbul</p>
 
-            <a href="#" class="btn btn-kafeyegit">Kafeye Git</a>
+            <a href="lepetitcafe.php" class="btn btn-kafeyegit">Kafeye Git</a>
 
         </div>
     </div>';
@@ -143,7 +143,7 @@ for ($i = 0; $i <= 12; $i++) {
 
             <p class="konum"><img src="images/konum_ikon.svg" alt="konumikonu"> Bahçelievler/İstanbul</p>
 
-            <a href="#" class="btn btn-kafeyegit">Kafeye Git</a>
+            <a href="GaiaBistro.php" class="btn btn-kafeyegit">Kafeye Git</a>
 
         </div>
     </div>';
@@ -176,7 +176,7 @@ for ($i = 0; $i <= 12; $i++) {
 
             <p class="konum"><img src="images/konum_ikon.svg" alt="konumikonu"> Fatih/İstanbul</p>
 
-            <a href="#" class="btn btn-kafeyegit">Kafeye Git</a>
+            <a href="royalbrew.php" class="btn btn-kafeyegit">Kafeye Git</a>
 
         </div>
     </div>';
@@ -209,7 +209,7 @@ for ($i = 0; $i <= 12; $i++) {
 
             <p class="konum"><img src="images/konum_ikon.svg" alt="konumikonu"> Üsküdar/İstanbul</p>
 
-            <a href="#" class="btn btn-kafeyegit">Kafeye Git</a>
+            <a href="harmoniousjava.php" class="btn btn-kafeyegit">Kafeye Git</a>
 
         </div>
     </div>';
