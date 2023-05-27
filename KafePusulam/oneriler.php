@@ -88,7 +88,7 @@ for ($i = 0; $i <= 12; $i++) {
         echo '
         <div class="oneri2">
         <div class="left">
-            <img src="images/kafe2.svg" alt="RadioCafe">
+            <img src="images/kafe2.svg" alt="Le Petit Cafe">
         </div>
         <div class="right">
             <div class="up">
@@ -242,7 +242,7 @@ for ($i = 0; $i <= 12; $i++) {
 
             <p class="konum"><img src="images/konum_ikon.svg" alt="konumikonu"> Kadıköy/İstanbul</p>
 
-            <a href="#" class="btn btn-kafeyegit">Kafeye Git</a>
+            <a href="auroradelights.php" class="btn btn-kafeyegit">Kafeye Git</a>
 
         </div>
     </div>';
