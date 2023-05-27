@@ -364,6 +364,13 @@ div.stars {
     text-align: start;
 } 
 
+.yorum{
+  display: flex;
+  border-width: 1px 0px;
+  border-style: solid;
+  border-color: #E4E5E7;
+}
+
 .yorum1{
   display: flex;
   border-width: 1px 0px;
@@ -407,7 +414,7 @@ div.stars {
   line-height: 16px;
   color: black;
   margin-left: 10px;
-  margin-top: 6px;
+  margin-top: 0px;
 }
 
 .yorumlar .right img{
@@ -425,13 +432,19 @@ div.stars {
   margin-top: 0px;
 }
 
-.yorum{
+.yorumm{
   font-family: 'Inter';
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
   margin-top: -25px;
+}
+
+.right .star-loop img{
+  width: 22px;
+  height: 24px;
+  margin-top: 20px;
 }
 
 

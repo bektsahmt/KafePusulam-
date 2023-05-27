@@ -165,7 +165,7 @@ $result = $baglanti->query($selectSql);
                 <p class="kullanici">@<?= $row["kullanici"]; ?></p>
             </div>
             <div class="right">
-                <div class="stars">
+                <div class="star-loop">
                     <?php
                     $yildiz = $row["yildiz"];
                     for ($i = 1; $i <= $yildiz; $i++) {
@@ -179,7 +179,7 @@ $result = $baglanti->query($selectSql);
                 <br>
                 <p class="tarih"><?= $row["tarih"]; ?></p>
                 <br>
-                <p class="yorum"><?= $row["yorum"]; ?></p>
+                <p class="yorumm"><?= $row["yorum"]; ?></p>
             </div>
         </div>
     <?php } ?>
