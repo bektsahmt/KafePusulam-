@@ -177,7 +177,7 @@ $result = $baglanti->query($selectSql);
                     ?>
                 </div>
                 <br>
-                <p class="tarih"><?= $row["tarih"]; ?></p>
+                <p class="tarih"><?= date_format(date_create($row["tarih"]),"d.m.Y") ; ?></p>
                 <br>
                 <p class="yorumm"><?= $row["yorum"]; ?></p>
             </div>

@@ -429,7 +429,7 @@ div.stars {
   font-weight: 600;
   font-size: 14px;
   line-height: 24px;
-  margin-top: 0px;
+  margin-top: -10px;
 }
 
 .yorumm{
@@ -438,7 +438,7 @@ div.stars {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  margin-top: -25px;
+  margin-top: -20px;
 }
 
 .right .star-loop img{
