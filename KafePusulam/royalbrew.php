@@ -1,21 +1,34 @@
 <?php
 // Bağlantı dosyasını dahil edin
-include('baglanti.php');
+include('baglanti.php');  
 
-// Form gönderildiğinde çalışacak kod
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+// Kullanıcı adını 'crudseries' tablosundan çekin
+$sql = "SELECT kullanici_adi FROM seriescrud ORDER BY id DESC LIMIT 1";
+$result = $baglanti->query($sql);
+
+// Kullanıcı adını kontrol edin
+if ($result && $result->num_rows > 0) {
+    $row = $result->fetch_assoc();
+    $kullanici = $row['kullanici_adi'];
+
+// Siparişi veritabanına kaydet
+if (isset($_POST['mesaj2'])) {
+    $siparis = $_POST['mesaj2'];
+    $insertSql = "INSERT INTO siparis_royal (kullanici, siparis) VALUES ('$kullanici', '$siparis')";
+    if ($baglanti->query($insertSql) === TRUE) {
+        echo "Sipariş başarıyla kaydedildi.";
+    } else {
+        echo "Sipariş kaydedilirken hata oluştu: " . $baglanti->error;
+    }
+}
+
+// Yorumu veritabanına kaydet
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['yildiz'][0]) && isset($_POST['yorum'])) {
     // Formdan gelen verileri alın
     $yildiz = $_POST['yildiz'][0]; // İlk seçilen yıldız değerini alın
-    $yorum = $_POST['mesaj'];
+    $yorum = $_POST['yorum'];
 
-    // Kullanıcı adını 'crudseries' tablosundan çekin
-    $sql = "SELECT kullanici_adi FROM seriescrud ORDER BY id DESC LIMIT 1";
-    $result = $baglanti->query($sql);
-
-    // Kullanıcı adını kontrol edin
-    if ($result && $result->num_rows > 0) {
-        $row = $result->fetch_assoc();
-        $kullanici = $row['kullanici_adi'];
+    
 
         // Yorumu veritabanına kaydedin
         $tarih = date("Y-m-d H:i:s");
@@ -25,9 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         } else {
             echo "Yorum kaydedilirken hata oluştu: " . $baglanti->error;
         }
-    } else {
-        echo "Kullanıcı adı bulunamadı.";
-    }
+    } 
 }
 
 // Yorumları veritabanından çekin
@@ -133,13 +144,13 @@ $result = $baglanti->query($selectSql);
 
                         
                             <div class="mesaj">
-                                <label for="mesaj"></label>
-                                <input type="text" name="mesaj" placeholder="Düşüncelerinizi İletin.">
-                            </div>
+                                    <label for="mesaj"></label>
+                                    <input type="text" name="yorum" placeholder="Düşüncelerinizi İletin.">
+                                </div>
             
-                            <div class="btn-field3">
-                                <button class="btn" type="submit">Değerlendir</button>
-                            </div>
+                                <div class="btn-field3">
+                                    <button class="btn" type="submit">Değerlendir</button>
+                                </div>
                         </form>
                             
                             
@@ -160,14 +171,14 @@ $result = $baglanti->query($selectSql);
                   <span class="close3">&times;</span>
                   <h2>Royal Brew</h2>
 
-                  <form action="">
+                  <form action="<?php echo $_SERVER['PHP_SELF']; ?>" method="POST">
                     <div class="mesaj2">
                         <label for="mesaj2"></label>
                         <input type="text" name="mesaj2" placeholder="Siparişinizi Veriniz">
                     </div>
     
                     <div class="btn-field5">
-                        <button class="btn2" type="button">Siparişi Ver</button>
+                        <button class="btn2" type="submit">Siparişi Ver</button>
                     </div>
                 </form>
 
