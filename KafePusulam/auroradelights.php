@@ -18,7 +18,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $kullanici = $row['kullanici_adi'];
 
         // Yorumu veritabanına kaydedin
-        $insertSql = "INSERT INTO yorumlar (kullanici, yorum, yildiz) VALUES ('$kullanici', '$yorum', '$yildiz')";
+        $tarih = date("Y-m-d H:i:s");
+        $insertSql = "INSERT INTO yorumlar (kullanici, yorum, yildiz, tarih) VALUES ('$kullanici', '$yorum', '$yildiz', '$tarih')";
         if ($baglanti->query($insertSql) === TRUE) {
             echo "Yorum başarıyla kaydedildi.";
         } else {
@@ -165,7 +166,7 @@ $result = $baglanti->query($selectSql);
                 <p class="kullanici">@<?= $row["kullanici"]; ?></p>
             </div>
             <div class="right">
-                <div class="stars">
+                <div class="star-loop">
                     <?php
                     $yildiz = $row["yildiz"];
                     for ($i = 1; $i <= $yildiz; $i++) {
@@ -177,9 +178,9 @@ $result = $baglanti->query($selectSql);
                     ?>
                 </div>
                 <br>
-                <p class="tarih"><?= $row["tarih"]; ?></p>
+                <p class="tarih"><?= date_format(date_create($row["tarih"]), "d.m.Y"); ?></p>
                 <br>
-                <p class="yorum"><?= $row["yorum"]; ?></p>
+                <p class="yorumm"><?= $row["yorum"]; ?></p>
             </div>
         </div>
     <?php } ?>
