@@ -12,8 +12,9 @@ $mail-> SMTPAuth = true;   //Kimlik doğrulama bilgileri gönderildi
 $mail-> SMTPSecure = "tls";  //Güvenlik protokolü belirlendi
 $mail-> Port = 587;   //Port Seçimi
 $mail-> Host = "smtp.gmail.com";   //Gmailin sağladığı host
-$mail-> Username = $_POST["mail"];  //kendi kullanıcı adın "kafepusulamiletisim@gmail.com"
+$mail-> Username = "kafepusulamiletisim@gmail.com";  //kendi kullanıcı adın "kafepusulamiletisim@gmail.com"
 $mail-> Password = "wdawxtanksidamwg";
+$mail->setFrom($_POST["mail"], $_POST["ad"]); 
 $mail-> addAddress("kafepusulamiletisim@gmail.com");  //mail kimden gönderilecek
 $mail-> Subject = "Kafe Pusulam Destek";  //konu metni
 $mail-> Body = $_POST["mesaj"];   //mesaj içeriği metni

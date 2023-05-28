@@ -30,7 +30,7 @@
                 </div>
 
                 <div class="mail">
-                    <label for="email">Email</label>
+                    <label for="mail">Email</label>
                     <br>
                     <input type="email" name="mail" placeholder="kafepusulam@gmail.com">
                 </div>
